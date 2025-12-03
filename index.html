@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthCare+ | Your Trusted Health Partner</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0284c7", // Sky 600
+            primaryDark: "#0369a1", // Sky 700
+            accent: "#16a34a", // Green 600
+            bgMain: "#f8fafc", // Slate 50
+          },
+          animation: {
+            'bounce-short': 'bounceShort 1s ease-in-out 1'
+          },
+          keyframes: {
+            bounceShort: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            }
+          }
+        },
+      },
+    };
+  </script>
+  
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+  </style>
+</head>
+
+<body class="bg-bgMain text-slate-800 font-sans antialiased">
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur shadow-sm border-b border-slate-200">
+    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between relative">
+      <a href="#" class="flex items-center gap-2 group">
+        <div class="h-9 w-9 rounded-lg bg-primary flex items-center justify-center shadow-md group-hover:bg-primaryDark transition">
+          <span class="text-white font-bold text-lg">H+</span>
+        </div>
+        <div>
+          <p class="font-bold text-lg leading-tight text-slate-800">HealthCare+</p>
+        </div>
+      </a>
+
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <li><a href="#" class="hover:text-primary transition-colors">Home</a></li>
+        <li><a href="#services" class="hover:text-primary transition-colors">Services</a></li>
+        <li><a href="#doctors" class="hover:text-primary transition-colors">Doctors</a></li>
+        <li><a href="#about" class="hover:text-primary transition-colors">About</a></li>
+        <li><a href="#contact" class="hover:text-primary transition-colors">Contact</a></li>
+      </ul>
+
+      <div class="hidden md:flex items-center gap-3">
+        <a href="#contact" class="text-xs font-bold text-primary border border-primary/20 rounded-full px-4 py-2 hover:bg-primary/5 transition">
+           Emergency: 1800-123
+        </a>
+      </div>
+
+       <label class="md:hidden p-2 text-slate-600 cursor-pointer z-50">
+         <input type="checkbox" class="hidden peer">
+         <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+         </svg>
+         
+         <div class="absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-t border-slate-100 shadow-xl 
+                     transition-all duration-300 origin-top transform scale-y-0 opacity-0 peer-checked:scale-y-100 peer-checked:opacity-100
+                     flex flex-col items-center justify-center gap-4 py-8 rounded-b-3xl">
+             <a href="#" class="text-base font-bold text-slate-700 hover:text-primary transition w-full text-center py-2">Home</a>
+             <a href="#services" class="text-base font-bold text-slate-700 hover:text-primary transition w-full text-center py-2">Services</a>
+             <a href="#doctors" class="text-base font-bold text-slate-700 hover:text-primary transition w-full text-center py-2">Doctors</a>
+             <a href="#about" class="text-base font-bold text-slate-700 hover:text-primary transition w-full text-center py-2">About</a>
+             <a href="#contact" class="text-base font-bold text-slate-700 hover:text-primary transition w-full text-center py-2">Contact</a>
+             <div class="w-2/3 h-px bg-slate-100 my-2"></div>
+             <a href="#contact" class="text-sm font-bold text-white bg-primary rounded-full px-6 py-3 shadow-lg shadow-primary/20">
+                Emergency: 1800-123
+             </a>
+         </div>
+       </label>
+    </nav>
+  </header>
+
+  <section class="relative pt-8 pb-12 lg:pt-16 lg:pb-20 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img src="https://st3.depositphotos.com/3450477/34282/i/450/depositphotos_342821896-stock-photo-medical-healthcare-background-flat-lay.jpg" alt="Healthcare Background" class="w-full h-full object-cover opacity-50">
+        <div class="absolute inset-0 bg-gradient-to-b from-bgMain/90 via-bgMain/80 to-transparent lg:bg-gradient-to-r lg:from-bgMain lg:via-bgMain/80 lg:to-transparent"></div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+      
+      <div class="space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 shadow-sm text-xs font-bold text-primary">
+          <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+          Accepting New Patients
+        </div>
+        
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-slate-900">
+          Advanced Healthcare <br/>
+          <span class="text-primary">For Your Family</span>
+        </h1>
+        
+        <p class="text-slate-600 text-sm sm:text-base max-w-lg leading-relaxed mx-auto lg:mx-0">
+          Experience world-class medical care with our team of specialists. Book appointments, access reports, and get 24/7 support—all in one place.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 pt-2">
+            <div class="flex -space-x-3 justify-center">
+                <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=100&h=100&fit=crop" alt="User">
+                <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="User">
+                <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="User">
+                <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-100 flex items-center justify-center text-xs font-bold text-slate-600">+2k</div>
+            </div>
+            <p class="text-xs font-semibold text-slate-600 text-center sm:text-left">Trusted by families <br class="hidden sm:block"> across the city.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 p-6 md:p-8 relative w-full max-w-md mx-auto lg:max-w-none">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent rounded-t-2xl"></div>
+        
+        <div class="text-center lg:text-left">
+            <h2 class="text-xl font-bold text-slate-900 mb-1">Book an Appointment</h2>
+            <p class="text-xs text-slate-500 mb-5">Fill in the details below to secure your slot.</p>
+        </div>
+
+        <form id="bookingForm" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-[11px] font-bold text-slate-500 mb-1 uppercase tracking-wide">Patient Name</label>
+                    <input type="text" placeholder="Full Name" required
+                        class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2.5 text-sm focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-[11px] font-bold text-slate-500 mb-1 uppercase tracking-wide">Phone</label>
+                    <input type="tel" placeholder="+91..." required
+                        class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2.5 text-sm focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition">
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-[11px] font-bold text-slate-500 mb-1 uppercase tracking-wide">Department</label>
+                <select class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2.5 text-sm focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition cursor-pointer">
+                    <option>General Medicine</option>
+                    <option>Cardiology</option>
+                    <option>Pediatrics</option>
+                    <option>Orthopedics</option>
+                    <option>Dermatology</option>
+                </select>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-[11px] font-bold text-slate-500 mb-1 uppercase tracking-wide">Preferred Date</label>
+                    <input type="date" id="preferredDate" required
+                        class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2.5 text-sm focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition text-slate-600">
+                </div>
+                <div>
+                    <label class="block text-[11px] font-bold text-slate-500 mb-1 uppercase tracking-wide">Time</label>
+                    <input type="time" id="preferredTime" required
+                        class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2.5 text-sm focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition text-slate-600">
+                </div>
+            </div>
+
+            <button type="submit" 
+                class="w-full bg-primary hover:bg-primaryDark text-white font-bold py-3.5 rounded-xl shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all transform active:scale-[0.98] mt-2">
+                Confirm Booking
+            </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-16 bg-white border-y border-slate-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">Comprehensive Services</h2>
+          <p class="text-sm text-slate-500">From routine check-ups to complex surgeries, we provide holistic care under one roof.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="group p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:border-primary/20 hover:shadow-xl hover:shadow-slate-200/50 transition duration-300 text-center">
+          <div class="h-12 w-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl mb-4 group-hover:bg-primary group-hover:text-white transition mx-auto">🩺</div>
+          <h3 class="font-bold text-slate-900 mb-2">Primary Care</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">Regular health checkups and seasonal flu treatments for the family.</p>
+        </div>
+        <div class="group p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:border-primary/20 hover:shadow-xl hover:shadow-slate-200/50 transition duration-300 text-center">
+          <div class="h-12 w-12 rounded-xl bg-green-100 text-green-600 flex items-center justify-center text-2xl mb-4 group-hover:bg-accent group-hover:text-white transition mx-auto">🔬</div>
+          <h3 class="font-bold text-slate-900 mb-2">Diagnostics</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">Advanced pathology labs and imaging services with quick reports.</p>
+        </div>
+        <div class="group p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:border-primary/20 hover:shadow-xl hover:shadow-slate-200/50 transition duration-300 text-center">
+          <div class="h-12 w-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-2xl mb-4 group-hover:bg-orange-500 group-hover:text-white transition mx-auto">❤️</div>
+          <h3 class="font-bold text-slate-900 mb-2">Cardiology</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">Expert heart care including ECG, Echo, and preventative plans.</p>
+        </div>
+        <div class="group p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:border-primary/20 hover:shadow-xl hover:shadow-slate-200/50 transition duration-300 text-center">
+          <div class="h-12 w-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-2xl mb-4 group-hover:bg-purple-500 group-hover:text-white transition mx-auto">🚑</div>
+          <h3 class="font-bold text-slate-900 mb-2">Emergency</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">24/7 ambulance and trauma care support for critical needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="doctors" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col sm:flex-row justify-between items-center sm:items-end mb-8 gap-4 text-center sm:text-left">
+        <div>
+           <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Our Specialists</h2>
+           <p class="text-sm text-slate-500 mt-1">Meet the experts behind your health.</p>
+        </div>
+        <button class="text-sm font-bold text-primary hover:text-primaryDark">View All →</button>
+      </div>
+      
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition group">
+            <div class="h-48 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=400&auto=format&fit=crop" alt="Dr. Ananya" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            </div>
+            <div class="p-5">
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <h3 class="font-bold text-slate-900">Dr. Ananya Singh</h3>
+                        <p class="text-xs text-primary font-semibold uppercase tracking-wide">Cardiologist</p>
+                    </div>
+                    <span class="bg-green-100 text-green-700 text-[10px] font-bold px-2 py-1 rounded-full">Available</span>
+                </div>
+                <p class="text-xs text-slate-500 mb-4 line-clamp-2">Specializes in interventional cardiology and heart failure management with 12+ years of experience.</p>
+                <div class="flex items-center gap-1 text-[11px] font-bold text-slate-700 border-t border-slate-100 pt-3">
+                    <span class="text-yellow-400 text-sm">★</span> 4.9 Rating (1k+ Reviews)
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition group">
+            <div class="h-48 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400&auto=format&fit=crop" alt="Dr. Rohan" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            </div>
+            <div class="p-5">
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <h3 class="font-bold text-slate-900">Dr. Rohan Khanna</h3>
+                        <p class="text-xs text-primary font-semibold uppercase tracking-wide">Orthopedic</p>
+                    </div>
+                    <span class="bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-1 rounded-full">Next: 4PM</span>
+                </div>
+                <p class="text-xs text-slate-500 mb-4 line-clamp-2">Expert in sports injuries, joint replacement, and arthroscopy procedures.</p>
+                <div class="flex items-center gap-1 text-[11px] font-bold text-slate-700 border-t border-slate-100 pt-3">
+                    <span class="text-yellow-400 text-sm">★</span> 4.8 Rating (850 Reviews)
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition group">
+            <div class="h-48 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=400&auto=format&fit=crop" alt="Dr. Nidhi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            </div>
+            <div class="p-5">
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <h3 class="font-bold text-slate-900">Dr. Nidhi Patel</h3>
+                        <p class="text-xs text-primary font-semibold uppercase tracking-wide">Pediatrician</p>
+                    </div>
+                    <span class="bg-purple-100 text-purple-700 text-[10px] font-bold px-2 py-1 rounded-full">Online</span>
+                </div>
+                <p class="text-xs text-slate-500 mb-4 line-clamp-2">Dedicated to child health, vaccination, and growth monitoring for newborns.</p>
+                <div class="flex items-center gap-1 text-[11px] font-bold text-slate-700 border-t border-slate-100 pt-3">
+                    <span class="text-yellow-400 text-sm">★</span> 5.0 Rating (2k+ Reviews)
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-16 bg-white border-y border-slate-100">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+          <div class="relative rounded-3xl overflow-hidden shadow-xl order-1 md:order-none">
+              <img src="https://www.millow.io/wp-content/uploads/2023/11/medicalbackground1.jpg" alt="Medical Team" class="w-full object-cover">
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white text-center md:text-left">
+                  <p class="font-bold text-lg">World Class Facilities</p>
+                  <p class="text-xs opacity-90">Equipped with the latest medical technology.</p>
+              </div>
+          </div>
+          
+          <div class="space-y-6 text-center md:text-left flex flex-col items-center md:items-start order-2 md:order-none">
+              <h2 class="text-3xl font-bold text-slate-900">Why HealthCare+?</h2>
+              <p class="text-sm text-slate-500 leading-relaxed">
+                  We believe in healthcare that puts you first. Our integrated approach ensures you spend less time worrying and more time recovering.
+              </p>
+              
+              <ul class="space-y-6 w-full max-w-sm md:max-w-none">
+                  <li class="flex flex-col md:flex-row gap-4 items-center md:items-start text-center md:text-left">
+                      <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-lg shadow-sm shrink-0">🛡️</div>
+                      <div>
+                          <p class="font-bold text-slate-800 text-sm">Safe & Sanitized</p>
+                          <p class="text-xs text-slate-500">Strict hygiene protocols followed at all times.</p>
+                      </div>
+                  </li>
+                  <li class="flex flex-col md:flex-row gap-4 items-center md:items-start text-center md:text-left">
+                      <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-lg shadow-sm shrink-0">💰</div>
+                      <div>
+                          <p class="font-bold text-slate-800 text-sm">Affordable Plans</p>
+                          <p class="text-xs text-slate-500">Transparent pricing with zero hidden charges.</p>
+                      </div>
+                  </li>
+                  <li class="flex flex-col md:flex-row gap-4 items-center md:items-start text-center md:text-left">
+                      <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-lg shadow-sm shrink-0">📱</div>
+                      <div>
+                          <p class="font-bold text-slate-800 text-sm">Smart Health App</p>
+                          <p class="text-xs text-slate-500">Track your records and prescriptions on your phone.</p>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </section>
+
+  <section id="contact" class="pt-16 pb-8 bg-slate-900 text-slate-300">
+    <div class="max-w-6xl mx-auto px-4">
+        
+        <div class="grid md:grid-cols-2 gap-10 mb-12">
+            <div class="text-center md:text-left flex flex-col items-center md:items-start">
+                <h2 class="text-2xl font-bold text-white mb-6">Visit Us</h2>
+                <div class="space-y-8 w-full">
+                    <div class="flex flex-col md:flex-row gap-4 items-center md:items-start">
+                        <div class="bg-slate-800 p-3 rounded-lg text-primary text-xl shadow-md shrink-0">📍</div>
+                        <div>
+                            <p class="font-bold text-white text-sm mb-1">HealthCare+ Main Center</p>
+                            <p class="text-xs leading-relaxed opacity-70">123 Wellness Street, Near City Garden,<br>New Delhi - 110016</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-4 items-center md:items-start">
+                        <div class="bg-slate-800 p-3 rounded-lg text-primary text-xl shadow-md shrink-0">📞</div>
+                        <div>
+                            <p class="font-bold text-white text-sm mb-1">Helpline</p>
+                            <p class="text-xs opacity-70">+91 98765 43210 (24x7 Support)</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-4 items-center md:items-start">
+                        <div class="bg-slate-800 p-3 rounded-lg text-primary text-xl shadow-md shrink-0">✉️</div>
+                        <div>
+                            <p class="font-bold text-white text-sm mb-1">Email</p>
+                            <p class="text-xs opacity-70">support@healthcareplus.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w-full h-64 bg-slate-800 rounded-2xl flex items-center justify-center border border-slate-700 relative overflow-hidden group shadow-lg">
+                <img src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?q=80&w=600&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-50 transition">
+                <span class="relative z-10 text-xs font-bold uppercase tracking-wider bg-black/50 px-4 py-2 rounded backdrop-blur-sm border border-white/20 hover:bg-black/70 transition cursor-pointer">View on Google Maps</span>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs opacity-60 gap-4 text-center">
+            <p>© 2025 HealthCare+. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <div id="successModal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-slate-900/60 backdrop-blur-sm transition-opacity duration-300 opacity-0">
+    <div id="modalPanel" class="bg-white rounded-2xl p-6 max-w-sm w-full mx-4 shadow-2xl transform scale-90 transition-all duration-300 opacity-0 text-center relative">
+        <button id="closeModalBtnTop" class="absolute top-3 right-3 text-slate-400 hover:text-slate-600">✕</button>
+        
+        <div class="h-16 w-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 animate-bounce-short">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+        </div>
+        
+        <h3 class="text-xl font-bold text-slate-800 mb-2">Booking Confirmed!</h3>
+        <p class="text-xs text-slate-500 mb-6 leading-relaxed">
+            Thank you for choosing HealthCare+. We have sent a confirmation SMS to your number.
+        </p>
+        
+        <button id="closeModalBtn" class="w-full bg-slate-900 text-white font-bold py-3 rounded-xl hover:bg-slate-800 transition shadow-lg">
+            Done
+        </button>
+    </div>
+  </div>
+
+  <script>
+    // --- Date Validation & Logic ---
+    function pad(n) { return n < 10 ? "0" + n : n; }
+    const dateInput = document.getElementById("preferredDate");
+    const timeInput = document.getElementById("preferredTime");
+    const now = new Date();
+    const todayStr = now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate());
+    
+    dateInput.min = todayStr;
+    dateInput.value = todayStr; 
+
+    function updateTimeMin() {
+        if (!dateInput.value) { timeInput.min = ""; return; }
+        const selectedDate = new Date(dateInput.value + "T00:00:00");
+        const today = new Date();
+        if (selectedDate.toDateString() === today.toDateString()) {
+            const h = pad(today.getHours());
+            const m = pad(today.getMinutes());
+            timeInput.min = h + ":" + m;
+        } else {
+            timeInput.min = "00:00";
+        }
+    }
+    dateInput.addEventListener("change", updateTimeMin);
+    updateTimeMin();
+
+    // --- Modal Logic ---
+    const form = document.getElementById("bookingForm");
+    const modal = document.getElementById("successModal");
+    const panel = document.getElementById("modalPanel");
+    const closeBtn = document.getElementById("closeModalBtn");
+    const closeBtnTop = document.getElementById("closeModalBtnTop");
+
+    function showModal() {
+        modal.classList.remove("hidden");
+        setTimeout(() => {
+            modal.classList.remove("opacity-0");
+            panel.classList.remove("scale-90", "opacity-0");
+            panel.classList.add("scale-100", "opacity-100");
+        }, 20);
+    }
+
+    function hideModal() {
+        modal.classList.add("opacity-0");
+        panel.classList.remove("scale-100", "opacity-100");
+        panel.classList.add("scale-90", "opacity-0");
+        setTimeout(() => {
+            modal.classList.add("hidden");
+            form.reset();
+        }, 300);
+    }
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        showModal();
+    });
+
+    closeBtn.addEventListener("click", hideModal);
+    closeBtnTop.addEventListener("click", hideModal);
+    modal.addEventListener("click", (e) => { if (e.target === modal) hideModal(); });
+  </script>
+
+</body>
+</html>
